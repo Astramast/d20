@@ -1,4 +1,7 @@
-class Domain():
+from Publisher import Publisher
+from Caracteristic import Caracteristic
+
+class Domain(Publisher, Caracteristic):
 	def __init__(self, name, caracteristic_list):
 		self.caracteristics = caracteristic_list
 		self.name = name
